@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="/">
+          <img src="https://static.wikia.nocookie.net/fallout/images/3/31/Flag_NCR_flagpole.svg" alt="NCR flag" height="50px">
+          <span>{{ site.title }}</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="/operations">Operations</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="content">
+        {{ content }}
+      </div>
+    </main>
+  </body>
+</html>
